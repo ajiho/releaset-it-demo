@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.4.4](https://github.com/ajiho/releaset-it-demo/compare/v1.4.2...v1.4.4) (2025-12-29)
+
 ## [1.4.3](https://github.com/ajiho/releaset-it-demo/compare/v1.4.2...v1.4.3) (2025-12-29)
 
 ## [1.4.2](https://github.com/ajiho/releaset-it-demo/compare/v1.4.1...v1.4.2) (2025-12-29)
