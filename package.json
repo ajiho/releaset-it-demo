@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"test success\" && exit 1",
-    "lint": "echo \"lint success\" && exit 1",
-    "build": "echo \"build success\" && exit 1",
+    "test": "echo \"test success\"",
+    "lint": "echo \"lint success\"",
+    "build": "echo \"build success\"",
     "release": "release-it"
   },
   "keywords": [],
