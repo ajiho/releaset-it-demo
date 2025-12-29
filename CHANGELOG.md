@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.5.0](https://github.com/ajiho/releaset-it-demo/compare/v1.4.5...v1.5.0) (2025-12-29)
+
+
+### Bug Fixes
+
+* 1 ([6943b27](https://github.com/ajiho/releaset-it-demo/commit/6943b27599b30cc499de71f8d83ebbf0827ec520))
+
+
+### Features
+
+* te ([3f39b79](https://github.com/ajiho/releaset-it-demo/commit/3f39b7948bf277521a574f5ded70e50a33c0578c))
+
 ## [1.4.5](https://github.com/ajiho/releaset-it-demo/compare/v1.4.2...v1.4.5) (2025-12-29)
 
 ## [1.4.5](https://github.com/ajiho/releaset-it-demo/compare/v1.4.2...v1.4.5) (2025-12-29)
