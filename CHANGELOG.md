@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.3](https://github.com/ajiho/releaset-it-demo/compare/v1.2.2...v1.2.3) (2025-12-29)
+
+
+### Features
+
+* ci ([c5cb5f8](https://github.com/ajiho/releaset-it-demo/commit/c5cb5f851537140371a6ff3af9a85083b8f4a848))
+
 ## [1.2.2](https://github.com/ajiho/releaset-it-demo/compare/v1.2.1...v1.2.2) (2025-12-29)
 
 
