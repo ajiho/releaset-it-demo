@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.3.0](https://github.com/ajiho/releaset-it-demo/compare/v1.2.3...v1.3.0) (2025-12-29)
+
+
+### Bug Fixes
+
+* a ([7d88de7](https://github.com/ajiho/releaset-it-demo/commit/7d88de793ca9bf649d4713903a3d4fbc6196e9e0))
+
+
+### Features
+
+* to npm ([08e2747](https://github.com/ajiho/releaset-it-demo/commit/08e2747a29022204fe104f33dbc3a55a8b29d16d))
+
 ## [1.2.3](https://github.com/ajiho/releaset-it-demo/compare/v1.2.2...v1.2.3) (2025-12-29)
 
 
