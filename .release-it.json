@@ -15,6 +15,11 @@
     "releaseName": "v${version}",
     "assets": ["dist"]
   },
+  "hooks": {
+    "after:bump": "npm run build",
+    "after:git:release": "echo After git push, before GitHub Release",
+    "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
+  },
   "plugins": {
     "@release-it/conventional-changelog": {
       "preset": "angular",
