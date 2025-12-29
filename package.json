@@ -13,6 +13,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@release-it/conventional-changelog": "^10.0.4",
     "release-it": "^19.2.2"
   }
 }
