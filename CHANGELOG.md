@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/ajiho/releaset-it-demo/compare/v1.4.0...v1.4.1) (2025-12-29)
+
+
+### Features
+
+* 233 ([5726a4a](https://github.com/ajiho/releaset-it-demo/commit/5726a4a9625906086513b15ed25adcb5166f8111))
+
 # [1.4.0](https://github.com/ajiho/releaset-it-demo/compare/v1.3.1...v1.4.0) (2025-12-29)
 
 
