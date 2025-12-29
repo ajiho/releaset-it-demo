@@ -11,12 +11,14 @@
     "publish": false
   },
   "github": {
-    "release": false
+    "release": true,
+    "releaseName": "v${version}"
   },
   "plugins": {
     "@release-it/conventional-changelog": {
       "preset": "angular",
       "infile": "CHANGELOG.md",
+
       "ignoreRecommendedBump": true
     }
   }
