@@ -2,7 +2,7 @@
 npx release-it --ci --no-increment --git.commit=false --git.tag=false --git.push=false --no-plugins.@release-it/conventional-changelog
 ```
 
-1
+12
 
 # test
 
