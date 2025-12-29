@@ -1,3 +1,7 @@
+```bash
+npx release-it --ci --no-plugins --no-increment --git.commit=false --git.tag=false --git.push=false
+```
+
 # test
 
 fix
