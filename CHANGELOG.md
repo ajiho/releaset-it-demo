@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/ajiho/releaset-it-demo/compare/v1.4.1...v1.4.2) (2025-12-29)
+
+
+### Bug Fixes
+
+* ci ([dc65b59](https://github.com/ajiho/releaset-it-demo/commit/dc65b59760a9c31a8eeba244d9f13c476bbee93a))
+
 ## [1.4.1](https://github.com/ajiho/releaset-it-demo/compare/v1.4.0...v1.4.1) (2025-12-29)
 
 
