@@ -1,5 +1,5 @@
 ```bash
-npx release-it --ci --no-plugins --no-increment --git.commit=false --git.tag=false --git.push=false
+npx release-it --ci --no-increment --git.commit=false --git.tag=false --git.push=false --no-plugins.@release-it/conventional-changelog
 ```
 
 # test
