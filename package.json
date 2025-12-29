@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"test success\"",
     "lint": "echo \"lint success\"",
-    "build": "echo \"build success\"",
+    "build": "node scripts/build.mjs",
     "release": "release-it"
   },
   "keywords": [],

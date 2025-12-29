@@ -11,15 +11,14 @@
     "publish": false
   },
   "github": {
-    "release": true,
+    "release": false,
     "releaseName": "v${version}",
-    "assets": ["dist/*.rar"]
+    "assets": ["dist"]
   },
   "plugins": {
     "@release-it/conventional-changelog": {
       "preset": "angular",
       "infile": "CHANGELOG.md",
-      "outfile": ".release-notes.md",
       "ignoreRecommendedBump": true
     }
   }
