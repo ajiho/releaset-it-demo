@@ -1,4 +1,11 @@
+[remote.github]
+owner = "ajiho"
+repo = "releaset-it-demo"
+
 [changelog]
+header = """
+[![animation](https://raw.githubusercontent.com/ajiho/releaset-it-demo/main/New-Year.gif)](https://git-cliff.org)\n
+"""
 body = """
 {%- macro remote_url() -%}
   https://github.com/{{ remote.github.owner }}/{{ remote.github.repo }}
