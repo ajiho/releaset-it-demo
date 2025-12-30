@@ -42,7 +42,7 @@ jobs:
         run: zip -r dist.zip dist
 
       - name: Publish to npm
-        run: npm publish
+        uses: JS-DevTools/npm-publish@v4
 
       - name: Github Release
         uses: softprops/action-gh-release@v2
