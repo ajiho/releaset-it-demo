@@ -18,6 +18,6 @@
   "hooks": {
     "after:bump": "npm run build",
     "after:git:release": "在 git push 之后、GitHub Release 之前执行",
-    "after:release": "成功发布 ${name} v${version} 到 ${repo.repository}"
+    "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
   }
 }
