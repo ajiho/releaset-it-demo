@@ -5,7 +5,6 @@ on:
     tags:
       - "v*"
 
-# 为整个工作流配置权限
 permissions:
   contents: write
 
