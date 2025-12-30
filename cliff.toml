@@ -44,7 +44,7 @@ body = """
 {% endfor -%}
 {%- if github and github.contributors | length > 0 -%}
 
-## 👥 Contributors
+## 🤝 Contributors
 
 {% for contributor in github.contributors %}
 - @{{ contributor.username }}
@@ -57,7 +57,7 @@ trim = true
 
 [git]
 commit_parsers = [
-    { message = "^feat", group = "<!-- 0 -->⛰️  新特性" },
+    { message = "^feat", group = "<!-- 0 -->🚀  新特性" },
     { message = "^fix", group = "<!-- 1 -->🐛 Bug 修复" },
     { message = "^doc", group = "<!-- 3 -->📚 文档" },
     { message = "^perf", group = "<!-- 4 -->⚡ 性能优化" },
