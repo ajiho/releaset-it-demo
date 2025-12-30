@@ -1,5 +1,10 @@
 [![animation](https://raw.githubusercontent.com/ajiho/releaset-it-demo/main/New-Year.gif)](https://git-cliff.org)
 
+## [1.11.0](https://github.com/ajiho/releaset-it-demo/compare/v1.10.2..v1.11.0) - 2025-12-30
+
+### ⛰️  新特性
+
+- Test (#1) - ([6686ca6](https://github.com/ajiho/releaset-it-demo/commit/6686ca6eb012034e6d0e8b27f016df535e2073b7))
 ## [1.10.2](https://github.com/ajiho/releaset-it-demo/compare/v1.10.1..v1.10.2) - 2025-12-30
 
 ### 🐛 Bug 修复
