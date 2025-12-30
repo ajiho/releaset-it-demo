@@ -1,22 +1,3 @@
-```bash
-npx release-it --ci --no-increment --git.commit=false --git.tag=false --git.push=false --no-plugins.@release-it/conventional-changelog
-```
-
-12
-
-# test
-
-fix
-
-feat
-
-fix2
-
-feat2
-
-fix2
-aaa
-
 # alpha
 
 ✅ 方案二：命令行直接指定版本（最精准）
