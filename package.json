@@ -6,7 +6,6 @@
     "test": "echo \"test success\"",
     "lint": "echo \"lint success\"",
     "build": "node scripts/build.mjs",
-    "changelog": "git-cliff -o CHANGELOG2.md",
     "release": "release-it"
   },
   "keywords": [],
@@ -15,7 +14,6 @@
   "description": "",
   "devDependencies": {
     "@release-it/conventional-changelog": "^10.0.4",
-    "git-cliff": "^2.11.0",
     "release-it": "^19.2.2"
   }
 }

@@ -17,7 +17,7 @@
   },
   "hooks": {
     "after:bump": "npm run build",
-    "after:git:release": "在 git push 之后、GitHub Release 之前执行",
-    "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
+    "after:git:release": "echo 在 git push 之后、GitHub Release 之前执行",
+    "after:release": "echo 已成功将 ${name} v${version} 发布到 ${repo.repository}。"
   }
 }
