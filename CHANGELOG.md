@@ -1,5 +1,19 @@
 [![animation](https://raw.githubusercontent.com/ajiho/releaset-it-demo/main/New-Year.gif)](https://git-cliff.org)
 
+## [unreleased]
+
+### Bug Fixes
+
+- Aa - ([a741559](https://github.com/ajiho/releaset-it-demo/commit/a741559d0c79a56844add49e7abaafdcc3ebbd0d))
+## [1.8.2](https://github.com/ajiho/releaset-it-demo/compare/v1.8.1..v1.8.2) - 2025-12-30
+
+### Chores
+
+- Release v1.8.2 - ([73aba07](https://github.com/ajiho/releaset-it-demo/commit/73aba071351df40b0d8f28919e0cb8e645b236ba))
+
+### Features
+
+- Aa - ([024a444](https://github.com/ajiho/releaset-it-demo/commit/024a44429af940e7ebdd105042ee6d6c9f525261))
 ## [1.8.1](https://github.com/ajiho/releaset-it-demo/compare/v1.8.0..v1.8.1) - 2025-12-30
 
 ### Bug Fixes
