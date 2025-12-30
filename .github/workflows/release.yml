@@ -41,8 +41,25 @@ jobs:
       - name: Zip dist
         run: zip -r dist.zip dist
 
+      - name: Determine npm dist-tag
+        id: dist
+        run: |
+          # 提取 tag 名，去掉 refs/tags/
+          REF="${GITHUB_REF#refs/tags/}"
+
+          if [[ "$REF" =~ - ]]; then
+            # 取 - 后面的部分，再去掉 . 后面的 patch，比如 alpha.0 -> alpha
+            ID="${REF#*-}"
+            ID="${ID%%.*}"
+            echo "Detected prerelease: $ID"
+            echo "tag=$ID" >> $GITHUB_OUTPUT
+          else
+            echo "Stable release, using 'latest'"
+            echo "tag=latest" >> $GITHUB_OUTPUT
+          fi
+
       - name: Publish to npm
-        uses: JS-DevTools/npm-publish@v4
+        run: npm run publish --tag ${{steps.dist.outputs.tag}}
 
       - name: Github Release
         uses: softprops/action-gh-release@v2
