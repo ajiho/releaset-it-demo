@@ -6,7 +6,8 @@ on:
       - "v*"
 
 permissions:
-  contents: write
+  contents: write # to be able to publish a GitHub release
+  id-token: write # to enable use of OIDC for npm provenance
 
 jobs:
   build:
@@ -20,7 +21,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
           registry-url: "https://registry.npmjs.org"
           cache: "npm"
 
@@ -39,6 +40,9 @@ jobs:
 
       - name: Zip dist
         run: zip -r dist.zip dist
+
+      - name: Publish to npm
+        run: npm publish
 
       - name: Github Release
         uses: softprops/action-gh-release@v2
