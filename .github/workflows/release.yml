@@ -59,7 +59,7 @@ jobs:
           fi
 
       - name: Publish to npm
-        run: npm run publish --tag ${{steps.dist.outputs.tag}}
+        run: npm publish --tag ${{steps.dist.outputs.tag}}
 
       - name: Github Release
         uses: softprops/action-gh-release@v2
