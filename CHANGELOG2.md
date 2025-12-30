@@ -1,3 +1,8 @@
+## [unreleased]
+
+### 🐛 Bug Fixes
+
+- 132
 ## [1.5.0] - 2025-12-29
 
 ### 🚀 Features

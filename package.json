@@ -6,6 +6,7 @@
     "test": "echo \"test success\"",
     "lint": "echo \"lint success\"",
     "build": "node scripts/build.mjs",
+    "changelog": "git-cliff -o CHANGELOG2.md",
     "release": "release-it"
   },
   "keywords": [],
