@@ -2,6 +2,18 @@
 
 
 
+## [1.13.2](https://github.com/ajiho/releaset-it-demo/compare/v1.13.1..v1.13.2) - 2025-12-30
+
+
+### 🐛 Bug 修复
+
+- Oidc - ([8566407](https://github.com/ajiho/releaset-it-demo/commit/85664075bcb39631d3eb7675026b7fcab8587f58))
+## 🤝 Contributors
+
+
+- @ajiho
+
+
 ## [1.13.1](https://github.com/ajiho/releaset-it-demo/compare/v1.13.0..v1.13.1) - 2025-12-30
 
 
