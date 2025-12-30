@@ -6,6 +6,8 @@
     "test": "echo \"test success\"",
     "lint": "echo \"lint success\"",
     "build": "node scripts/build.mjs",
+    "build1": "node scripts/build.mjs",
+    "build2": "git-cliff --latest",
     "release": "release-it"
   },
   "keywords": [],
