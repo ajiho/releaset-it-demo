@@ -7,10 +7,12 @@ header = """
 [![animation](https://raw.githubusercontent.com/ajiho/releaset-it-demo/main/New-Year.gif)](https://git-cliff.org)\n
 """
 body = """
+{# 定义远程仓库 URL 宏 #}
 {%- macro remote_url() -%}
   https://github.com/{{ remote.github.owner }}/{{ remote.github.repo }}
 {%- endmacro -%}
 
+{# 定义打印 commit 的宏 #}
 {% macro print_commit(commit) -%}
     - {% if commit.scope %}*({{ commit.scope }})* {% endif %}\
         {% if commit.breaking %}[**breaking**] {% endif %}\
@@ -18,6 +20,7 @@ body = """
         ([{{ commit.id | truncate(length=7, end="") }}]({{ self::remote_url() }}/commit/{{ commit.id }}))\
 {% endmacro -%}
 
+{# 版本标题 #}
 {% if version %}\
     {% if previous.version %}\
         ## [{{ version | trim_start_matches(pat="v") }}]\
@@ -29,6 +32,7 @@ body = """
     ## [unreleased]
 {% endif %}\
 
+{# 按 commit group 分组输出 #}
 {% for group, commits in commits | group_by(attribute="group") %}
     ### {{ group | striptags | trim | upper_first }}
     {% for commit in commits
@@ -50,6 +54,15 @@ body = """
 - @{{ contributor.username }}
 {% endfor -%}
 
+{%- endif -%}
+
+{# 新贡献者列表（只列首次贡献者） #}
+{%- if github and github.contributors | filter(attribute="is_first_time", value=true) | length > 0 -%}
+## ❤️ New Contributors
+{% for contributor in github.contributors | filter(attribute="is_first_time", value=true) %}
+- @{{ contributor.username }}
+  {%- if contributor.pr_number %} in [#{{ contributor.pr_number }}]({{ self::remote_url() }}/pull/{{ contributor.pr_number }}){% endif %}
+{% endfor %}
 {%- endif -%}
 """
 
