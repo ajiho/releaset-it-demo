@@ -35,7 +35,7 @@ jobs:
         id: git-cliff
         with:
           config: cliff.toml
-          args: -vv --latest --strip header
+          args: -vv --latest
 
       - name: Zip dist
         run: zip -r dist.zip dist
