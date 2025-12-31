@@ -43,7 +43,7 @@ jobs:
 
       - name: Determine npm dist-tag
         id: release_meta
-        uses: ajiho/determine-npm-tag-action@v1.0.0
+        uses: ajiho/determine-npm-tag-action@main
 
       - name: Publish to npm
         run: npm publish --tag ${{ steps.release_meta.outputs.tag }}
