@@ -1,6 +1,6 @@
 {
   "name": "releaset-it-demo",
-  "version": "1.13.3-alpha.10",
+  "version": "1.13.3-alpha.11",
   "main": "index.js",
   "repository": {
     "type": "git",
