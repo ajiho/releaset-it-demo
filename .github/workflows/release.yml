@@ -42,24 +42,11 @@ jobs:
         run: zip -r dist.zip dist
 
       - name: Determine npm dist-tag
-        id: dist
-        run: |
-          # 提取 tag 名，去掉 refs/tags/
-          REF="${GITHUB_REF#refs/tags/}"
-
-          if [[ "$REF" =~ - ]]; then
-            # 取 - 后面的部分，再去掉 . 后面的 patch，比如 alpha.0 -> alpha
-            ID="${REF#*-}"
-            ID="${ID%%.*}"
-            echo "Detected prerelease: $ID"
-            echo "tag=$ID" >> $GITHUB_OUTPUT
-          else
-            echo "Stable release, using 'latest'"
-            echo "tag=latest" >> $GITHUB_OUTPUT
-          fi
+        id: release_meta
+        uses: ajiho/determine-npm-tag-action@v1.0.0
 
       - name: Publish to npm
-        run: npm publish --tag ${{steps.dist.outputs.tag}}
+        run: npm publish --tag ${{ steps.release_meta.outputs.tag }}
 
       - name: Github Release
         uses: softprops/action-gh-release@v2
@@ -68,4 +55,4 @@ jobs:
         with:
           body: ${{ steps.git-cliff.outputs.content }}
           files: dist.zip
-          prerelease: ${{ contains(github.ref, '-') }}
+          prerelease: ${{ steps.release_meta.outputs.prerelease }}
