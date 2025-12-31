@@ -2,6 +2,18 @@
 
 
 
+## [1.13.3-alpha.8](https://github.com/ajiho/releaset-it-demo/compare/v1.13.3-alpha.7..v1.13.3-alpha.8) - 2025-12-31
+
+
+### 🐛 Bug 修复
+
+- A - ([ac2c329](https://github.com/ajiho/releaset-it-demo/commit/ac2c3298196a97f012e581da3e7db0f500b27998))
+## 🤝 Contributors
+
+
+- @ajiho
+
+
 ## [1.13.3-alpha.7](https://github.com/ajiho/releaset-it-demo/compare/v1.13.3-alpha.6..v1.13.3-alpha.7) - 2025-12-31
 
 
