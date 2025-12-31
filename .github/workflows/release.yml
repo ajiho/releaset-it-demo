@@ -41,12 +41,12 @@ jobs:
       - name: Zip dist
         run: zip -r dist.zip dist
 
-      - name: Determine npm dist-tag
-        id: release_meta
-        uses: ajiho/determine-npm-tag-action@v1.0.0
+      - name: Npm auto tag
+        id: auto-tag
+        uses: ajiho/npm-auto-tag@main
 
       - name: Publish to npm
-        run: npm publish --tag ${{ steps.release_meta.outputs.tag }}
+        run: npm publish --tag ${{ steps.auto-tag.outputs.tag }}
 
       - name: Github Release
         uses: softprops/action-gh-release@v2
@@ -55,4 +55,4 @@ jobs:
         with:
           body: ${{ steps.git-cliff.outputs.content }}
           files: dist.zip
-          prerelease: ${{ steps.release_meta.outputs.prerelease }}
+          prerelease: ${{ steps.auto-tag.outputs.prerelease }}
