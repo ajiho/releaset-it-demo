@@ -1,6 +1,6 @@
 # alpha
 
-aafff
+aafffdd
 ✅ 方案二：命令行直接指定版本（最精准）
 npx release-it 1.2.3-alpha.1
 
