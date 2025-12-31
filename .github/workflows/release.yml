@@ -56,3 +56,6 @@ jobs:
           body: ${{ steps.git-cliff.outputs.content }}
           files: dist.zip
           prerelease: ${{ steps.auto-tag.outputs.prerelease }}
+
+      - name: release-it-test
+        run: npx release-it --dry-run
