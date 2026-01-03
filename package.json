@@ -14,6 +14,10 @@
     "build2": "git-cliff --latest",
     "release": "release-it"
   },
+  "publishConfig": {
+    "access": "public",
+    "tag": "next"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

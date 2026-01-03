@@ -41,12 +41,8 @@ jobs:
       - name: Zip dist
         run: zip -r dist.zip dist
 
-      - name: Npm auto tag
-        id: auto-tag
-        uses: ajiho/npm-auto-tag@main
-
       - name: Publish to npm
-        run: npm publish --tag ${{ steps.auto-tag.outputs.tag }}
+        run: npm publish
 
       - name: Github Release
         uses: softprops/action-gh-release@v2
@@ -55,4 +51,4 @@ jobs:
         with:
           body: ${{ steps.git-cliff.outputs.content }}
           files: dist.zip
-          prerelease: ${{ steps.auto-tag.outputs.prerelease }}
+          prerelease: ${{ contains(github.ref_name, '-') }}
