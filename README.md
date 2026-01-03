@@ -29,7 +29,7 @@ CI 控制
 情况 1：第一次 alpha
 npx release-it --preRelease=alpha
 aaa
-结果：
+结果：a
 
 1.2.3 → 1.2.4-alpha.0
 
