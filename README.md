@@ -28,7 +28,7 @@ CI 控制
 四、你想要的「alpha.1」该怎么发？（示例）
 情况 1：第一次 alpha
 npx release-it --preRelease=alpha
-
+aaa
 结果：
 
 1.2.3 → 1.2.4-alpha.0
